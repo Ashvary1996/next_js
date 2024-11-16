@@ -1,15 +1,22 @@
+import Link from "next/link";
 import React from "react";
 
-function page() {
+export default function HomePage() {
   return (
     <div>
       <h1>Home Page</h1>
-      home Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime
-      obcaecati veritatis reiciendis ab accusamus perferendis! Est totam minus
-      facilis voluptatibus consequatur reiciendis quas minima inventore cumque
-      tempore ea, eveniet amet.
+
+      <nav>
+        <li>
+          <Link href="/blog">Blog</Link>
+        </li>
+        <li>
+          <Link href="/products">Products</Link>
+        </li>
+        <li>
+          <Link href="/blog">Blog</Link>
+        </li>
+      </nav>
     </div>
   );
 }
-
-export default page;
